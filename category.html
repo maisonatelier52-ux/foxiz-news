@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Category Page</title>
-      <link rel="stylesheet" href="category.css" />
-      <link rel="stylesheet" href="style.css" />
-
-</head>
-<body>
-  <header class="header">
+    <link rel="stylesheet" href="category.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="header">
       <!-- Left Icons -->
       <div class="header-left">
-        <i class="fa-solid fa-right-from-bracket"></i>
-
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-        <i class="fa-brands fa-youtube"></i>
+        <img class="header-icons" src="/images/signin.svg" alt="search" />
+        <img class="header-icons" src="/images/facebook.svg" alt="search" />
+        <img class="header-icons" src="/images/twitter.svg" alt="search" />
+        <img class="header-icons" src="/images/youtube.svg" alt="search" />
       </div>
 
       <!-- Center Logo -->
@@ -26,14 +25,10 @@
 
       <!-- Right Icons -->
       <div class="header-right">
-        <i class="fa-regular fa-bell"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <div class="theme-toggle">
-          <i class="fa-regular fa-sun"></i>
-        </div>
+        <img class="header-icons" src="/images/bell.svg" alt="notificaton" />
+        <img class="header-icons" src="/images/search.svg" alt="search" />
       </div>
     </header>
-
     <nav class="nav">
       <ul class="nav-list">
         <li class="active">Home</li>
@@ -48,321 +43,476 @@
         </li>
       </ul>
     </nav>
+
     <div class="category-page">
-  <div class="category-breadcrumb">
-    <a href="#">Standard News</a>
-    <span>&gt;</span>
-    <a href="#">Blog</a>
-    <span>&gt;</span>
-    <strong>U.K News</strong>
-  </div>
-
-  <div class="category-header">
-    <div class="category-content">
-      <h1>U.K News</h1>
-      <p>
-        Politics is the art of looking for trouble, finding it everywhere,
-        diagnosing it incorrectly and applying the wrong remedies.
-      </p>
-    </div>
-
-    <div class="category-image">
-      <img src="/images/cat-section-01.jpg" alt="UK News">
-    </div>
-  </div>
-</div>
-
-<!-- category first section -->
- <section class="news-layout">
-
-  <!-- LEFT FEATURED POST -->
-  <article class="news-main">
-    <img src="/images/cat-section-02.jpg" alt="Main News">
-
-    <div class="news-overlay">
-      <span class="news-category">U.K NEWS</span>
-
-      <h2>
-        White House Reminds Lawmakers not<br>
-        to Travel to Afghanistan
-      </h2>
-
-      <p class="news-excerpt">
-        Politics is the art of looking for trouble, finding it everywhere,
-        diagnosing it incorrectly and applying the wrong remedies
-      </p>
-
-      <div class="news-meta">
-        <img src="author.jpg" alt="Author">
-        <span>Ryan Sillers</span>
-        <span class="dot">•</span>
-        <span>Aug 28, 21</span>
+      <div class="category-breadcrumb">
+        <a href="#">Standard News</a>
+        <span>&gt;</span>
+        <a href="#">Blog</a>
+        <span>&gt;</span>
+        <strong>U.K News</strong>
       </div>
-    </div>
-  </article>
 
-  <!-- RIGHT SIDE POSTS -->
-  <div class="news-side">
+      <div class="category-header">
+        <div class="category-content">
+          <h1>U.K News</h1>
+          <p>
+            Politics is the art of looking for trouble, finding it everywhere,
+            diagnosing it incorrectly and applying the wrong remedies.
+          </p>
+        </div>
 
-    <article class="news-card">
-      <img src="/images/cat-section-03.jpg" alt="">
-      <div class="news-overlay small">
-        <span class="member-only">MEMBER ONLY</span>
-        <h3>The States Braces for Protests Over New COVID Rules</h3>
-        <div class="news-meta">
-          <img src="author.jpg">
-          <span>Ryan Sillers</span>
-          <span class="dot">•</span>
-          <span>Aug 29, 21</span>
+        <div class="category-image">
+          <img src="/images/cat-section-01.jpg" alt="UK News" />
         </div>
       </div>
-    </article>
+    </div>
 
-    <article class="news-card">
-      <img src="/images/cat-section-04.jpg" alt="">
-      <div class="news-overlay small">
-        <h3>The Census is About to Set Our Politics on Fire</h3>
-        <div class="news-meta">
-          <img src="author.jpg">
-          <span>Ryan Sillers</span>
-          <span class="dot">•</span>
-          <span>Aug 27, 21</span>
+    <!-- category first section -->
+    <section class="news-layout">
+      <!-- LEFT FEATURED POST -->
+      <article class="news-main">
+        <img src="/images/cat-section-02.jpg" alt="Main News" />
+
+        <div class="news-overlay">
+          <span class="news-category">U.K NEWS</span>
+
+          <h2>
+            White House Reminds Lawmakers not<br />
+            to Travel to Afghanistan
+          </h2>
+
+          <p class="news-excerpt">
+            Politics is the art of looking for trouble, finding it everywhere,
+            diagnosing it incorrectly and applying the wrong remedies
+          </p>
+
+          <div class="news-meta">
+            <img src="author.jpg" alt="Author" />
+            <span>Ryan Sillers</span>
+            <span class="dot">•</span>
+            <span>Aug 28, 21</span>
+          </div>
         </div>
+      </article>
+
+      <!-- RIGHT SIDE POSTS -->
+      <div class="news-side">
+        <article class="news-card">
+          <img src="/images/cat-section-03.jpg" alt="" />
+          <div class="news-overlay small">
+            <span class="member-only">MEMBER ONLY</span>
+            <h3>The States Braces for Protests Over New COVID Rules</h3>
+            <div class="news-meta">
+              <img src="author.jpg" />
+              <span>Ryan Sillers</span>
+              <span class="dot">•</span>
+              <span>Aug 29, 21</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <img src="/images/cat-section-04.jpg" alt="" />
+          <div class="news-overlay small">
+            <h3>The Census is About to Set Our Politics on Fire</h3>
+            <div class="news-meta">
+              <img src="author.jpg" />
+              <span>Ryan Sillers</span>
+              <span class="dot">•</span>
+              <span>Aug 27, 21</span>
+            </div>
+          </div>
+        </article>
       </div>
-    </article>
+    </section>
 
-  </div>
-</section>
-
-
-<!-- ad section -->
-   <div class="centered-image-container">
+    <!-- ad section -->
+    <!-- <div class="centered-image-container">
     <img src="/images/ad-section-index.jpg" alt="" />
-</div>
+</div> -->
 
-<!-- latest category news section -->
-<section class="latest-news">
-
-  <!-- SECTION TITLE -->
-  <div class="section-header">
-    <span class="dot"></span>
-    <h2>Latest U.K News News</h2>
-  </div>
-
-  <div class="news-grid">
-
-    <!-- CARD -->
-    <article class="news-item">
-      <div class="news-thumb">
-        <img src="/images/cat-section-05.jpg" alt="">
-        <span class="tag engineering">ENGINEERING</span>
+    <!-- latest category news section -->
+    <section class="latest-news">
+      <!-- SECTION TITLE -->
+      <div class="section-header">
+        <span class="dot"></span>
+        <h2>Latest U.K News News</h2>
       </div>
 
-      <h3>Key Trends Developing in Global Equity Markets</h3>
-      <p>Good web design has visual weight, is optimized for various devices, and...</p>
+      <div class="news-grid">
+        <!-- CARD -->
+        <article class="news-item">
+          <div class="news-thumb">
+            <img src="/images/cat-section-05.jpg" alt="" />
+            <span class="tag engineering">ENGINEERING</span>
+          </div>
 
-      <div class="news-footer">
-        <div class="author">
-          <img src="author.jpg" alt="">
-          <span>Ryan Sillers</span>
-          <span class="dot">•</span>
-          <span>Aug 29, 21</span>
+          <h3>Key Trends Developing in Global Equity Markets</h3>
+          <p>
+            Good web design has visual weight, is optimized for various devices,
+            and...
+          </p>
+
+          <div class="author">
+            <div class="author-section">
+              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+
+              <span class="name">Ryan Sillers</span>
+            </div>
+
+            <span class="separator">|</span>
+
+            <span class="date">Sep 8, 21</span>
+
+            <svg
+              class="icon save"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="news-item">
+          <div class="news-thumb">
+            <img src="/images/cat-section-06.jpg" alt="" />
+            <span class="tag biology">BIOLOGY</span>
+          </div>
+
+          <h3>Global Warming Is Changing How Hurricanes Work</h3>
+          <p>
+            Good web design has visual weight, is optimized for various devices,
+            and...
+          </p>
+
+          <div class="author">
+            <div class="author-section">
+              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+
+              <span class="name">Ryan Sillers</span>
+            </div>
+
+            <span class="separator">|</span>
+
+            <span class="date">Sep 8, 21</span>
+
+            <svg
+              class="icon save"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="news-item">
+          <div class="news-thumb">
+            <img src="/images/cat-section-07.jpg" alt="" />
+            <span class="tag congress">CONGRESS</span>
+          </div>
+
+          <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
+          <p>
+            Good web design has visual weight, is optimized for various devices,
+            and...
+          </p>
+
+          <div class="author">
+            <div class="author-section">
+              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+
+              <span class="name">Ryan Sillers</span>
+            </div>
+
+            <span class="separator">|</span>
+
+            <span class="date">Sep 8, 21</span>
+
+            <svg
+              class="icon save"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-thumb">
+            <img src="/images/cat-section-08.jpg" alt="" />
+            <span class="tag congress">CONGRESS</span>
+          </div>
+
+          <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
+          <p>
+            Good web design has visual weight, is optimized for various devices,
+            and...
+          </p>
+
+          <div class="author">
+            <div class="author-section">
+              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+
+              <span class="name">Ryan Sillers</span>
+            </div>
+
+            <span class="separator">|</span>
+
+            <span class="date">Sep 8, 21</span>
+
+            <svg
+              class="icon save"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-thumb">
+            <img src="/images/cat-section-09.jpg" alt="" />
+            <span class="tag congress">CONGRESS</span>
+          </div>
+
+          <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
+          <p>
+            Good web design has visual weight, is optimized for various devices,
+            and...
+          </p>
+
+          <div class="author">
+            <div class="author-section">
+              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+
+              <span class="name">Ryan Sillers</span>
+            </div>
+
+            <span class="separator">|</span>
+
+            <span class="date">Sep 8, 21</span>
+
+            <svg
+              class="icon save"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+        </article>
+        
+        <article class="news-item">
+          <div class="news-thumb">
+            <img src="/images/cat-section-10.jpg" alt="" />
+            <span class="tag congress">CONGRESS</span>
+          </div>
+
+          <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
+          <p>
+            Good web design has visual weight, is optimized for various devices,
+            and...
+          </p>
+
+          <div class="author">
+            <div class="author-section">
+              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+
+              <span class="name">Ryan Sillers</span>
+            </div>
+
+            <span class="separator">|</span>
+
+            <span class="date">Sep 8, 21</span>
+
+            <svg
+              class="icon save"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+        </article>
+        <!-- Repeat cards as needed -->
+        <article class="news-item">
+          <div class="news-thumb">
+            <img src="/images/cat-section-11.jpg" alt="" />
+            <span class="tag congress">CONGRESS</span>
+          </div>
+
+          <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
+          <p>
+            Good web design has visual weight, is optimized for various devices,
+            and...
+          </p>
+
+          <div class="author">
+            <div class="author-section">
+              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+
+              <span class="name">Ryan Sillers</span>
+            </div>
+
+            <span class="separator">|</span>
+
+            <span class="date">Sep 8, 21</span>
+
+            <svg
+              class="icon save"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb">
+            <img src="/images/cat-section-12.jpg" alt="" />
+            <span class="tag congress">CONGRESS</span>
+          </div>
+
+          <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
+          <p>
+            Good web design has visual weight, is optimized for various devices,
+            and...
+          </p>
+
+          <div class="author">
+            <div class="author-section">
+              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+
+              <span class="name">Ryan Sillers</span>
+            </div>
+
+            <span class="separator">|</span>
+
+            <span class="date">Sep 8, 21</span>
+
+            <svg
+              class="icon save"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <!-- TOP HEADER -->
+      <div class="footer">
+        <div class="footer-header">
+          <div class="footer-categories">
+            <span class="dot"></span>
+            <span class="footer-title">Categories</span>
+          </div>
+
+          <ul class="footer-categories-list">
+            <li>ES Money</li>
+            <li>U.K News</li>
+            <li>The Escapist</li>
+            <li>Insider</li>
+            <li>Science</li>
+            <li>Technology</li>
+            <li>LifeStyle</li>
+            <li>Marketing</li>
+          </ul>
         </div>
-        <span class="bookmark">🔖</span>
-      </div>
-    </article>
 
-    <!-- CARD -->
-    <article class="news-item">
-      <div class="news-thumb">
-        <img src="/images/cat-section-06.jpg" alt="">
-        <span class="tag biology">BIOLOGY</span>
-      </div>
+        <div class="footer-divider"></div>
 
-      <h3>Global Warming Is Changing How Hurricanes Work</h3>
-      <p>Good web design has visual weight, is optimized for various devices, and...</p>
-
-      <div class="news-footer">
-        <div class="author">
-          <img src="author.jpg">
-          <span>Ryan Sillers</span>
-          <span class="dot">•</span>
-          <span>Aug 28, 21</span>
-        </div>
-        <span class="bookmark">🔖</span>
-      </div>
-    </article>
-
-    <!-- CARD -->
-    <article class="news-item">
-      <div class="news-thumb">
-        <img src="/images/cat-section-07.jpg" alt="">
-        <span class="tag congress">CONGRESS</span>
-      </div>
-
-      <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
-      <p>Good web design has visual weight, is optimized for various devices, and...</p>
-
-      <div class="news-footer">
-        <div class="author">
-          <img src="author.jpg">
-          <span>Ryan Sillers</span>
-          <span class="dot">•</span>
-          <span>Aug 28, 21</span>
-        </div>
-        <span class="bookmark">🔖</span>
-      </div>
-    </article>
-
-      <article class="news-item">
-      <div class="news-thumb">
-        <img src="/images/cat-section-08.jpg" alt="">
-        <span class="tag congress">CONGRESS</span>
-      </div>
-
-      <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
-      <p>Good web design has visual weight, is optimized for various devices, and...</p>
-
-      <div class="news-footer">
-        <div class="author">
-          <img src="author.jpg">
-          <span>Ryan Sillers</span>
-          <span class="dot">•</span>
-          <span>Aug 28, 21</span>
-        </div>
-        <span class="bookmark">🔖</span>
-      </div>
-    </article>
-      <article class="news-item">
-      <div class="news-thumb">
-        <img src="/images/cat-section-09.jpg" alt="">
-        <span class="tag congress">CONGRESS</span>
-      </div>
-
-      <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
-      <p>Good web design has visual weight, is optimized for various devices, and...</p>
-
-      <div class="news-footer">
-        <div class="author">
-          <img src="author.jpg">
-          <span>Ryan Sillers</span>
-          <span class="dot">•</span>
-          <span>Aug 28, 21</span>
-        </div>
-        <span class="bookmark">🔖</span>
-      </div>
-    </article>
-      <article class="news-item">
-      <div class="news-thumb">
-        <img src="/images/cat-section-10.jpg" alt="">
-        <span class="tag congress">CONGRESS</span>
-      </div>
-
-      <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
-      <p>Good web design has visual weight, is optimized for various devices, and...</p>
-
-      <div class="news-footer">
-        <div class="author">
-          <img src="author.jpg">
-          <span>Ryan Sillers</span>
-          <span class="dot">•</span>
-          <span>Aug 28, 21</span>
-        </div>
-        <span class="bookmark">🔖</span>
-      </div>
-    </article>
-    <!-- Repeat cards as needed -->
-  <article class="news-item">
-      <div class="news-thumb">
-        <img src="/images/cat-section-11.jpg" alt="">
-        <span class="tag congress">CONGRESS</span>
-      </div>
-
-      <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
-      <p>Good web design has visual weight, is optimized for various devices, and...</p>
-
-      <div class="news-footer">
-        <div class="author">
-          <img src="author.jpg">
-          <span>Ryan Sillers</span>
-          <span class="dot">•</span>
-          <span>Aug 28, 21</span>
-        </div>
-        <span class="bookmark">🔖</span>
-      </div>
-    </article>
-      <article class="news-item">
-      <div class="news-thumb">
-        <img src="/images/cat-section-12.jpg" alt="">
-        <span class="tag congress">CONGRESS</span>
-      </div>
-
-      <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
-      <p>Good web design has visual weight, is optimized for various devices, and...</p>
-
-      <div class="news-footer">
-        <div class="author">
-          <img src="author.jpg">
-          <span>Ryan Sillers</span>
-          <span class="dot">•</span>
-          <span>Aug 28, 21</span>
-        </div>
-        <span class="bookmark">🔖</span>
-      </div>
-    </article>
-  </div>
-</section>
-
-
-<!-- footer -->
- <footer>
+        <!-- CONTENT -->
         <div class="footer-content">
-            <div class="footer-left">
-                <h3>Categories</h3>
-                <hr>
-                <div class="about-us">
-                    <p>We influence 20 million users and is the number one business and technology news network on the planet.</p>
-                    <div class="social-links">
-                        <a href="#">Facebook</a>
-                        <a href="#">X</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">Pinterest</a>
-                        <a href="#">LinkedIn</a>
-                    </div>
-                </div>
+          <!-- LEFT -->
+          <div class="footer-left">
+            <h4>About US</h4>
+            <p>
+              We influence 20 million users and is the number one business and
+              technology news network on the planet.
+            </p>
+
+            <div class="footer-icons">
+              <img class="item-icon" src="/images/facebook.svg" alt="search" />
+              <img class="item-icon" src="/images/twitter.svg" alt="search" />
+              <img class="item-icon" src="/images/instagram.svg" alt="search" />
+              <img class="item-icon" src="/images/pinterest.svg" alt="search" />
+              <img class="item-icon" src="/images/linkedin.svg" alt="search" />
+            </div>
+          </div>
+
+          <!-- MID LEFT -->
+          <div class="footer-mid-left">
+            <h4>Quick Link</h4>
+            <ul>
+              <li>My Bookmark</li>
+              <li>Interests <span class="badge new">New</span></li>
+              <li>Contact Us</li>
+              <li>Blog Index</li>
+            </ul>
+          </div>
+
+          <!-- MID RIGHT -->
+          <div class="footer-mid-right">
+            <h4>Top Categories</h4>
+            <ul>
+              <li>The Escapist</li>
+              <li>U.K News <span class="badge hot">Hot</span></li>
+              <li>Entertainment</li>
+              <li>ES Money</li>
+            </ul>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="footer-right">
+            <h4>Subscribe US</h4>
+            <p>
+              Subscribe to our newsletter to get our newest articles instantly!
+            </p>
+
+            <div class="subscribe-box">
+              <input type="email" placeholder="Your email address" />
+              <button>Sign Up Now</button>
             </div>
 
-            <div class="footer-middle">
-                <h4>Quick Link</h4>
-                <ul>
-                    <li><a href="#">My Bookmark</a></li>
-                    <li><a href="#">Interests <span class="new">New</span></a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Blog Index</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-right">
-                <h4>Top Categories</h4>
-                <ul>
-                    <li><a href="#">The Escapist</a></li>
-                    <li><a href="#">U.K News <span class="hot">Hot</span></a></li>
-                    <li><a href="#">Entertainment</a></li>
-                    <li><a href="#">ES Money</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-bottom">
-                <h4>Subscribe US</h4>
-                <p>Subscribe to our newsletter to get our newest articles instantly!</p>
-                <form>
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit">Sign Up Now</button>
-                    <label>
-                        <input type="checkbox" required> I have read and agree to the terms & conditions
-                    </label>
-                </form>
-            </div>
-        </div></footer>
-</body>
+            <label class="terms">
+              <input type="checkbox" />
+              <span>I have read and agree to the terms & conditions</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- BOTTOM -->
+      <div class="footer-bottom">
+        © Foxiz News Network. Ruby Design Company. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
 </html>

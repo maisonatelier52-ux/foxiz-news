@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+   <!-- header section -->
     <header class="header">
       <!-- Left Icons -->
       <div class="header-left">
-        <i class="fa-solid fa-right-from-bracket"></i>
-
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-        <i class="fa-brands fa-youtube"></i>
+        <img class="header-icons" src="/images/signin.svg" alt="search" />
+        <img class="header-icons" src="/images/facebook.svg" alt="search" />
+        <img class="header-icons" src="/images/twitter.svg" alt="search" />
+        <img class="header-icons" src="/images/youtube.svg" alt="search" />
       </div>
 
       <!-- Center Logo -->
@@ -25,11 +25,8 @@
 
       <!-- Right Icons -->
       <div class="header-right">
-        <i class="fa-regular fa-bell"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <div class="theme-toggle">
-          <i class="fa-regular fa-sun"></i>
-        </div>
+        <img class="header-icons" src="/images/bell.svg" alt="notificaton" />
+        <img class="header-icons" src="/images/search.svg" alt="search" />
       </div>
     </header>
 
@@ -292,65 +289,94 @@
       </aside>
     </section>
 
+
     <!-- footer -->
     <footer>
-      <div class="footer-content">
-        <div class="footer-left">
-          <h3>Categories</h3>
-          <hr />
-          <div class="about-us">
+      <!-- TOP HEADER -->
+      <div class="footer">
+        <div class="footer-header">
+          <div class="footer-categories">
+            <span class="dot"></span>
+            <span class="footer-title">Categories</span>
+          </div>
+
+          <ul class="footer-categories-list">
+            <li>ES Money</li>
+            <li>U.K News</li>
+            <li>The Escapist</li>
+            <li>Insider</li>
+            <li>Science</li>
+            <li>Technology</li>
+            <li>LifeStyle</li>
+            <li>Marketing</li>
+          </ul>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <!-- CONTENT -->
+        <div class="footer-content">
+          <!-- LEFT -->
+          <div class="footer-left">
+            <h4>About US</h4>
             <p>
               We influence 20 million users and is the number one business and
               technology news network on the planet.
             </p>
-            <div class="social-links">
-              <a href="#">Facebook</a>
-              <a href="#">X</a>
-              <a href="#">Instagram</a>
-              <a href="#">Pinterest</a>
-              <a href="#">LinkedIn</a>
+
+            <div class="footer-icons">
+              <img class="item-icon" src="/images/facebook.svg" alt="search" />
+              <img class="item-icon" src="/images/twitter.svg" alt="search" />
+              <img class="item-icon" src="/images/instagram.svg" alt="search" />
+              <img class="item-icon" src="/images/pinterest.svg" alt="search" />
+              <img class="item-icon" src="/images/linkedin.svg" alt="search" />
             </div>
           </div>
-        </div>
 
-        <div class="footer-middle">
-          <h4>Quick Link</h4>
-          <ul>
-            <li><a href="#">My Bookmark</a></li>
-            <li>
-              <a href="#">Interests <span class="new">New</span></a>
-            </li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Blog Index</a></li>
-          </ul>
-        </div>
+          <!-- MID LEFT -->
+          <div class="footer-mid-left">
+            <h4>Quick Link</h4>
+            <ul>
+              <li>My Bookmark</li>
+              <li>Interests <span class="badge new">New</span></li>
+              <li>Contact Us</li>
+              <li>Blog Index</li>
+            </ul>
+          </div>
 
-        <div class="footer-right">
-          <h4>Top Categories</h4>
-          <ul>
-            <li><a href="#">The Escapist</a></li>
-            <li>
-              <a href="#">U.K News <span class="hot">Hot</span></a>
-            </li>
-            <li><a href="#">Entertainment</a></li>
-            <li><a href="#">ES Money</a></li>
-          </ul>
-        </div>
+          <!-- MID RIGHT -->
+          <div class="footer-mid-right">
+            <h4>Top Categories</h4>
+            <ul>
+              <li>The Escapist</li>
+              <li>U.K News <span class="badge hot">Hot</span></li>
+              <li>Entertainment</li>
+              <li>ES Money</li>
+            </ul>
+          </div>
 
-        <div class="footer-bottom">
-          <h4>Subscribe US</h4>
-          <p>
-            Subscribe to our newsletter to get our newest articles instantly!
-          </p>
-          <form>
-            <input type="email" placeholder="Your email address" required />
-            <button type="submit">Sign Up Now</button>
-            <label>
-              <input type="checkbox" required /> I have read and agree to the
-              terms & conditions
+          <!-- RIGHT -->
+          <div class="footer-right">
+            <h4>Subscribe US</h4>
+            <p>
+              Subscribe to our newsletter to get our newest articles instantly!
+            </p>
+
+            <div class="subscribe-box">
+              <input type="email" placeholder="Your email address" />
+              <button>Sign Up Now</button>
+            </div>
+
+            <label class="terms">
+              <input type="checkbox" />
+              <span>I have read and agree to the terms & conditions</span>
             </label>
-          </form>
+          </div>
         </div>
+      </div>
+      <!-- BOTTOM -->
+      <div class="footer-bottom">
+        © Foxiz News Network. Ruby Design Company. All Rights Reserved.
       </div>
     </footer>
   </body>
