@@ -4,18 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foxiz Header</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <!-- header section -->
+     <input type="checkbox" id="menu-toggle" />
     <header class="header">
       <!-- Left Icons -->
       <div class="header-left">
-        <img class="header-icons" src="/images/signin.svg" alt="search" />
-        <img class="header-icons" src="/images/facebook.svg" alt="search" />
-        <img class="header-icons" src="/images/twitter.svg" alt="search" />
-        <img class="header-icons" src="/images/youtube.svg" alt="search" />
+        <!-- <img class="header-icons" src="/images/signin.svg" alt="search" /> -->
+        <img class="header-icons" src="/images/facebook.svg" alt="facebook" />
+        <img class="header-icons" src="/images/twitter.svg" alt="twitter" />
+        <img class="header-icons" src="/images/youtube.svg" alt="youtube" />
       </div>
+  <label for="menu-toggle" class="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
 
       <!-- Center Logo -->
       <div class="header-center">
@@ -24,15 +32,15 @@
 
       <!-- Right Icons -->
       <div class="header-right">
-        <img class="header-icons" src="/images/bell.svg" alt="notificaton" />
-        <img class="header-icons" src="/images/search.svg" alt="search" />
+        <img class="header-right-icons" src="/images/bell.svg" alt="notificaton" />
+        <img class="header-right-icons" src="/images/search.svg" alt="search" />
       </div>
     </header>
 
     <!-- categories section -->
     <nav class="nav">
       <ul class="nav-list">
-        <li class="active">Home</li>
+        <li>Home</li>
         <li>U.K News <i class="fa-solid fa-chevron-down"></i></li>
         <li>Technology <i class="fa-solid fa-chevron-down"></i></li>
         <li>Posts <i class="fa-solid fa-chevron-down"></i></li>
@@ -45,6 +53,88 @@
       </ul>
     </nav>
 
+<!-- Mobile / Mega Menu -->
+<div class="mega-menu" id="megaMenu">
+
+  <div class="menu-search">
+    <label class="search-label">Search</label>
+    <div class="search-box">
+      <span class="search-icon"><img src="/images/search.svg" alt="search"/></span>
+      <input type="text" placeholder="Search Headlines, News..." />
+      <span class="search-arrow">→</span>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h4>Demos</h4>
+    <div class="menu-grid">
+      <div class="menu-list">
+        <span>Home</span>
+      <span>Home</span>
+      <span>Home</span>
+      </div>
+     <div class="menu-list">
+       <span>Home</span>
+      <span>Home</span>
+     </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h4>Categories</h4>
+    <div class="menu-grid">
+     <div class="menu-list">
+       <span>Technology</span>
+      <span>Entertainment</span>
+      <span>The Escapist</span>
+      <span>Insider</span>
+     </div>
+     <div class="menu-list">
+       <span>ES Money</span>
+      <span>U.K News</span>
+      <span>Science</span>
+      <span>Health</span>
+     </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h4>Bookmarks</h4>
+    <div class="menu-grid">
+      <div><span>Customize Interests</span></div>
+      <div><span>My Bookmarks</span></div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h4>More Foxiz</h4>
+    <div class="menu-grid">
+      <div><span>Blog Index</span></div>
+      <div><span>Sitemap</span></div>
+    </div>
+  </div>
+
+<div class="auth-follow">
+  <div class="auth-row">
+    <span>Have an existing account?</span>
+    <a href="#" class="signin-btn">Sign In</a>
+  </div>
+
+  <div class="follow-row">
+    <span>Follow US</span>
+    <div class="social-icons">
+      <a href="#"><img class="item-icon" src="/images/facebook.svg" alt="facebook" /></a>
+      <a href="#">  <img class="item-icon" src="/images/twitter.svg" alt="twitter" /></i></a>
+      <!-- <a href="#">  <img class="item-icon" src="/images/.svg" alt="search" /></i></a> -->
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+    <div class="">
     <!-- first section -->
     <div class="page">
       <!-- hero-section-01 -->
@@ -65,10 +155,11 @@
           TRENDING
         </h3>
 
-        <!-- ITEM 1 -->
+     <div class="sidebar-items">
+         <!-- ITEM 1 -->
         <article class="list-item">
           <h4>Here Are the 4 Cheapest Electric Vehicles You Can Buy</h4>
-          <div class="meta tech">
+          <div class="meta">
             <svg
               class="icon inbox"
               viewBox="0 0 24 24"
@@ -81,7 +172,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">Technology</span>
+            <span class="category tech">Technology</span>
             <span class="separator">|</span>
             <span class="date">Aug 31, 21</span>
             <svg
@@ -98,11 +189,11 @@
 
         <!-- ITEM 2 -->
         <article class="list-item">
-          <span class="badge member">MEMBER ONLY</span>
+          <span class="badge red">MEMBER ONLY</span>
           <span class="list-title">
             The States Braces for Protests Over New COVID Rules
           </span>
-          <div class="meta uk">
+          <div class="meta">
             <svg
               class="icon inbox"
               viewBox="0 0 24 24"
@@ -115,7 +206,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">U.K News</span>
+            <span class="category uk">U.K News</span>
             <span class="separator">|</span>
             <span class="date">Aug 29, 21</span>
             <svg
@@ -133,7 +224,7 @@
         <!-- ITEM 3 -->
         <article class="list-item">
           <h4>9 Awesome Destinations for Solo Female Travelers</h4>
-          <div class="meta escape">
+          <div class="meta">
             <svg
               class="icon inbox"
               viewBox="0 0 24 24"
@@ -146,7 +237,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">The Escapist</span>
+            <span class="category escape">The Escapist</span>
             <span class="separator">|</span>
             <span class="date">Sep 18, 21</span>
             <svg
@@ -164,7 +255,7 @@
         <!-- ITEM 4 -->
         <article class="list-item">
           <h4>The Best Islands for Beaches, From Aruba to the Baltics</h4>
-          <div class="meta escape">
+          <div class="meta">
             <svg
               class="icon inbox"
               viewBox="0 0 24 24"
@@ -177,7 +268,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">The Escapist</span>
+            <span class="category escape">The Escapist</span>
             <span class="separator">|</span>
             <span class="date">Sep 18, 21</span>
             <svg
@@ -195,7 +286,7 @@
         <!-- ITEM 5 -->
         <article class="list-item">
           <h4>Sony WF-10XM4: Headphones Are Our Absolute Favorite</h4>
-          <div class="meta tech">
+          <div class="meta">
             <svg
               class="icon inbox"
               viewBox="0 0 24 24"
@@ -208,7 +299,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">Technology</span>
+            <span class="category tech">Technology</span>
             <span class="separator">|</span>
             <span class="date">Sep 8, 21</span>
             <svg
@@ -222,13 +313,15 @@
             </svg>
           </div>
         </article>
+     </div>
+
       </aside>
 
       <!-- hero-section-02 -->
       <!-- MAIN FEATURE -->
       <main class="main">
         <div class="feature-card">
-          <span class="badge uk">U.K News</span>
+          <span class="badge red">U.K News</span>
           <h1>
             National Day Rally Sacrifice, Effort Needed to Preserve Harmony
           </h1>
@@ -238,9 +331,9 @@
           </p>
           <div class="author">
             <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-            <span class="name">Ryan Sillers</span>
+            <span class="main-author-name">Ryan Sillers</span>
             <span class="separator">|</span>
-            <span class="date">Aug 28, 21</span>
+            <span class="main-author-date">Aug 28, 21</span>
           </div>
         </div>
       </main>
@@ -251,7 +344,7 @@
         <article class="card">
           <div class="image-category">
             <img src="/images/uk-hero-section-1.jpg" alt="" />
-            <span class="badge uk">U.K News</span>
+            <span class="badge red">U.K News</span>
           </div>
           <p class="list-title">
             Two Anti-Lockdown Leaders Arrested as Protests Held Across Valinor
@@ -263,7 +356,7 @@
             <img src="/images/uk-hero-section-02.jpg" alt="" />
             <span class="badge entertainment">Entertainment</span>
           </div>
-          <span class="badge member">Member Only</span>
+          <span class="badge red">Member Only</span>
           <span class="list-title">
             2021 London Awards: Dua Lova, Natalia Styles & More Wow on Red
             Carpet
@@ -283,7 +376,7 @@
             <h4>
               Why You Should Have a Passport Even If You’re Not Planning a Trip?
             </h4>
-            <div class="meta escape">
+            <div class="meta">
               <svg
                 class="icon inbox"
                 viewBox="0 0 24 24"
@@ -296,7 +389,7 @@
                   d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
                 />
               </svg>
-              <span class="category">The Escapist</span>
+              <span class="category escape">The Escapist</span>
               <svg
                 class="icon save"
                 viewBox="0 0 24 24"
@@ -310,7 +403,7 @@
           </article>
           <article class="list-section-item">
             <h4>White House Reminds Lawmakers Not to Travel to Afghanistan</h4>
-            <div class="meta uk">
+            <div class="meta">
               <svg
                 class="icon inbox"
                 viewBox="0 0 24 24"
@@ -323,7 +416,7 @@
                   d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
                 />
               </svg>
-              <span class="category">U.K News</span>
+              <span class="category uk">U.K News</span>
               <svg
                 class="icon save"
                 viewBox="0 0 24 24"
@@ -337,11 +430,11 @@
           </article>
 
           <article class="list-section-item">
-            <span class="badge member">MEMBER ONLY</span>
+            <span class="badge red">MEMBER ONLY</span>
             <span class="list-title">
               What’s Wrong With Asgard’s 2022 Audit? A Lot, Thor Say
             </span>
-            <div class="meta uk">
+            <div class="meta">
               <svg
                 class="icon inbox"
                 viewBox="0 0 24 24"
@@ -354,7 +447,7 @@
                   d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
                 />
               </svg>
-              <span class="category">U.K News</span>
+              <span class="category uk">U.K News</span>
               <svg
                 class="icon save"
                 viewBox="0 0 24 24"
@@ -368,7 +461,7 @@
           </article>
           <article class="list-section-item">
             <h4>What You Need to Know about Covid Delta Variant</h4>
-            <div class="meta Health">
+            <div class="meta">
               <svg
                 class="icon inbox"
                 viewBox="0 0 24 24"
@@ -381,7 +474,7 @@
                   d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
                 />
               </svg>
-              <span class="category">Health</span>
+              <span class="category health">Health</span>
               <svg
                 class="icon save"
                 viewBox="0 0 24 24"
@@ -398,7 +491,7 @@
               What You Need to Add to Your Summer Travel Bucket List with
               Friends
             </h4>
-            <div class="meta escape">
+            <div class="meta">
               <svg
                 class="icon inbox"
                 viewBox="0 0 24 24"
@@ -411,7 +504,7 @@
                   d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
                 />
               </svg>
-              <span class="category">U.K News</span>
+              <span class="category escape">U.K News</span>
               <svg
                 class="icon save"
                 viewBox="0 0 24 24"
@@ -445,40 +538,36 @@
         <article class="featured-card">
           <img src="images/uk-news-section.jpg" alt="" />
           <div class="overlay">
-            <span class="badge">U.K NEWS</span>
+            <span class="badge red">U.K NEWS</span>
             <h3>The Census is About to Set Our Politics on Fire</h3>
             <p>
               Politics is the art of looking for trouble, finding it everywhere,
               diagnosing it incorrectly and...
             </p>
-            <div class="meta">
               <div class="author">
-                <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-                <span class="name">Ryan Sillers</span>
-                <span class="separator">|</span>
-                <span class="date">Aug 28, 21</span>
-              </div>
-            </div>
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
+            <span class="separator">|</span>
+            <span class="main-author-date">Aug 28, 21</span>
+          </div>
           </div>
         </article>
 
         <article class="featured-card">
           <img src="images/uk-hero-section-02.jpg" alt="" />
           <div class="overlay">
-            <span class="badge">U.K NEWS</span>
+            <span class="badge red">U.K NEWS</span>
             <h3>One Day Noticed, Politicians Wary Resignation Timetable</h3>
             <p>
               Politics is the art of looking for trouble, finding it everywhere,
               diagnosing it incorrectly and...
             </p>
-            <div class="meta">
-              <div class="author">
-                <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-                <span class="name">Ryan Sillers</span>
-                <span class="separator">|</span>
-                <span class="date">Aug 28, 21</span>
-              </div>
-            </div>
+             <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
+            <span class="separator">|</span>
+            <span class="main-author-date">Aug 28, 21</span>
+          </div>
           </div>
         </article>
       </div>
@@ -488,69 +577,61 @@
         <article class="news-card">
           <div class="image-wrapper">
             <img src="images/uk-hero-section-03.jpg" alt="" />
-            <span class="badge">U.K NEWS</span>
+            <span class="badge red">U.K NEWS</span>
           </div>
           <h4>
             Municipal Politicians to Debate Introduction of Vaccination Passport
           </h4>
-          <div class="meta">
             <div class="author">
               <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
               <span class="name">Ryan Sillers</span>
               <span class="separator">|</span>
               <span class="date">Aug 28, 21</span>
             </div>
-          </div>
         </article>
 
         <article class="news-card">
           <div class="image-wrapper">
             <img src="images/uk-hero-section-04.jpg" alt="" />
-            <span class="badge">U.K NEWS</span>
+            <span class="badge red">U.K NEWS</span>
           </div>
           <h4>Key Trends Developing in Global Equity Markets</h4>
-          <div class="meta">
             <div class="author">
               <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
               <span class="name">Ryan Sillers</span>
               <span class="separator">|</span>
               <span class="date">Aug 28, 21</span>
-            </div>
           </div>
         </article>
 
         <article class="news-card">
           <div class="image-wrapper">
             <img src="images/uk-hero-section-05.jpg" alt="" />
-            <span class="badge">U.K NEWS</span>
+            <span class="badge red">U.K NEWS</span>
           </div>
           <h4>Global Warming Is Changing How Hurricanes Work</h4>
-          <div class="meta">
             <div class="author">
               <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
               <span class="name">Ryan Sillers</span>
               <span class="separator">|</span>
               <span class="date">Aug 28, 21</span>
-            </div>
           </div>
         </article>
 
         <article class="news-card">
           <div class="image-wrapper">
             <img src="images/uk-hero-section-06.jpg" alt="" />
-            <span class="badge">U.K NEWS</span>
+            <span class="badge red">U.K NEWS</span>
           </div>
           <h4>
             Coronavirus Resurgence Could Cause Major Problems for Soldiers
             Spring
           </h4>
-          <div class="meta">
             <div class="author">
               <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
               <span class="name">Ryan Sillers</span>
               <span class="separator">|</span>
               <span class="date">Aug 28, 21</span>
-            </div>
           </div>
         </article>
       </div>
@@ -562,31 +643,48 @@
 
       <h3>Follow Us</h3>
 
-      <div class="social-icons">
-        <div class="social-item facebook">
-          <i class="fab fa-facebook-f"></i>
-          <strong>248.1k</strong>
-          <span>Like</span>
-        </div>
-
-        <div class="social-item twitter">
-          <i class="fab fa-x-twitter"></i>
-          <strong>69.1k</strong>
-          <span>Follow</span>
-        </div>
-
-        <div class="social-item pinterest">
-          <i class="fab fa-pinterest-p"></i>
-          <strong>134k</strong>
-          <span>Pin</span>
-        </div>
-
-        <div class="social-item instagram">
-          <i class="fab fa-instagram"></i>
-          <strong>54.3k</strong>
-          <span>Follow</span>
-        </div>
-      </div>
+    <div class="social-grid">
+                <div class="social-item">
+                  <div class="icon-circle facebook">
+                    <img
+                      src="/images/fb-white.svg"
+                      alt="fb"
+                      class="follow-btn"
+                    />
+                  </div>
+                  <span>Like</span>
+                </div>
+                <div class="social-item">
+                  <div class="icon-circle x-twitter">
+                    <img
+                      src="/images/X-white.svg"
+                      alt="twitter"
+                      class="follow-btn"
+                    />
+                  </div>
+                  <span>Follow</span>
+                </div>
+                <div class="social-item">
+                  <div class="icon-circle medium">
+                    <img
+                      src="/images/medium-white.svg"
+                      alt="youtube"
+                      class="follow-btn"
+                    />
+                  </div>
+                  <span>Subscribe</span>
+                </div>
+                <div class="social-item">
+                  <div class="icon-circle substack">
+                    <img
+                      src="/images/substack-white.svg"
+                      alt="telegram"
+                      class="follow-btn"
+                    />
+                  </div>
+                  <span>Follow</span>
+                </div>
+              </div>
     </section>
 
     <!-- e.s money -->
@@ -613,14 +711,12 @@
               The real test is not whether you avoid this failure, because you
               won't. It's whether you let it harden or...
             </p>
-            <div class="meta">
-              <div class="author">
-                <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-                <span class="name">Ryan Sillers</span>
-                <span class="separator">|</span>
-                <span class="date">Aug 28, 21</span>
-              </div>
-            </div>
+            <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
+            <span class="separator">|</span>
+            <span class="main-author-date">Aug 28, 21</span>
+          </div>
           </div>
         </article>
 
@@ -629,9 +725,9 @@
           <article class="money-card">
             <div class="money-image-wrapper">
               <img src="images/es-money-section-01.jpg" alt="" />
+              <span class="badge blue">ES MONEY</span>
             </div>
-            <span class="badge blue">ES MONEY</span>
-            <div>
+            <div class="money-text">
               <span class="badge red">MEMBER ONLY</span>
               <span class="money-title">
                 AE Shipping on a Roll Once Again with Soaring Bulk Shipping
@@ -653,16 +749,14 @@
           <article class="money-card">
             <div class="money-image-wrapper">
               <img src="images/es-money-section-02.jpg" alt="" />
+              <span class="badge blue">ES MONEY</span>
             </div>
-            <span class="badge blue">ES MONEY</span>
             <h4>Central Paris Rents Fall 15% While Rural Areas Rise</h4>
-            <div class="meta">
               <div class="author">
                 <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
                 <span class="name">Ryan Sillers</span>
                 <span class="separator">|</span>
                 <span class="date">Aug 28, 21</span>
-              </div>
             </div>
           </article>
         </div>
@@ -727,7 +821,7 @@
           <img src="images/popular-section-01.jpg" alt="" />
           <div class="overlay">
             <span class="badge red">U.K NEWS</span>
-            <span class="badge pink">MEMBER ONLY</span>
+            <span class="badge red">MEMBER ONLY</span>
             <h4>The States Braces for Protests Over New COVID Rules</h4>
             <div class="meta">
               <span>Ryan Sillers</span>
@@ -792,24 +886,18 @@
         <article class="insider-featured">
          <div class="image-wrapper-featured">
            <img src="images/insider-section-01.jpg" alt="" />
-           <span class="badge green">INSIDER</span>
+           <span class="badge green">U.K News</span>
          </div>
           <div class="info">
-            <span class="badge pink">MEMBER ONLY</span>
+            <span class="badge red">MEMBER ONLY</span>
             <span class="insider-headline">The Best Street Style From Paris Fashion Week Spring</span>
             <p class="paragraph">Paris Fashion Week’s combined digital and physical season kicked off with</p>
-           <div class="author">
-            <div class="author-section">
-              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-
-              <span class="name">Ryan Sillers</span>
-            </div>
-
+          <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
             <span class="separator">|</span>
-
-            <span class="date">Sep 8, 21</span>
-
-            <svg
+            <span class="main-author-date">Aug 28, 21</span>
+             <svg
               class="icon save"
               viewBox="0 0 24 24"
               fill="none"
@@ -825,23 +913,17 @@
         <article class="insider-featured">
           <div class="image-wrapper">
             <img src="images/insider-section-02.jpg" alt="" />
-            <span class="badge green">INSIDER</span>
+            <span class="badge green">U.K News</span>
           </div>
           <div class="info">
             <p class="insider-headline">Jennifer Shows You How to Wear a T-shirt as a Hipster</p>
             <p class="paragraph">Celebrities Wearing Balmain: From Kim Kardashian And Kendall Jenner, To Sophia Loren</p>
-           <div class="author">
-            <div class="author-section">
-              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-
-              <span class="name">Ryan Sillers</span>
-            </div>
-
+         <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
             <span class="separator">|</span>
-
-            <span class="date">Sep 8, 21</span>
-
-            <svg
+            <span class="main-author-date">Aug 28, 21</span>
+             <svg
               class="icon save"
               viewBox="0 0 24 24"
               fill="none"
@@ -857,7 +939,8 @@
 
       <!-- Bottom Grid -->
       <div class="insider-grid">
-        <article class="insider-item">
+       <div class="insider-first-row">
+         <article class="insider-item">
           <div class="insider-image">
 
             <img src="images/insider-section-03.jpg" alt="" />
@@ -877,7 +960,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">U.K News</span>
+            <span class="category health">Insider</span>
             <svg
               class="icon save"
               viewBox="0 0 24 24"
@@ -914,7 +997,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">U.K News</span>
+            <span class="category health">Insider</span>
             <svg
               class="icon save"
               viewBox="0 0 24 24"
@@ -948,7 +1031,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">U.K News</span>
+            <span class="category health">Insider</span>
             <svg
               class="icon save"
               viewBox="0 0 24 24"
@@ -982,7 +1065,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">U.K News</span>
+            <span class="category health">Insider</span>
             <svg
               class="icon save"
               viewBox="0 0 24 24"
@@ -995,8 +1078,10 @@
           </div>
           </div>
         </article>
+       </div>
 
-        <article class="insider-item">
+     <div class="insider-second-row">
+         <article class="insider-item">
              <div class="insider-image">
 
                <img src="images/insider-section-07.jpg" alt="" />
@@ -1016,7 +1101,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">U.K News</span>
+            <span class="category health">Insider</span>
             <svg
               class="icon save"
               viewBox="0 0 24 24"
@@ -1052,7 +1137,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">U.K News</span>
+            <span class="category health">Insider</span>
             <svg
               class="icon save"
               viewBox="0 0 24 24"
@@ -1086,7 +1171,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">U.K News</span>
+            <span class="category health">Insider</span>
             <svg
               class="icon save"
               viewBox="0 0 24 24"
@@ -1102,7 +1187,6 @@
 
         <article class="insider-item">
              <div class="insider-image">
-
                <img src="images/insider-section-10.jpg" alt="" /> 
              </div>
            <div class="insider-title-section">
@@ -1123,7 +1207,7 @@
                 d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
               />
             </svg>
-            <span class="category">U.K News</span>
+            <span class="category health">Insider</span>
             <svg
               class="icon save"
               viewBox="0 0 24 24"
@@ -1136,6 +1220,7 @@
           </div>
           </div>
         </article>
+     </div>
       </div>
     </section>
 
@@ -1157,10 +1242,12 @@
               the defining force of a new social order in which efficiency is no
               longer an option...
             </p>
-            <div class="meta">
-              <span>Ryan Sillers</span>
-              <span>Oct 21, 21</span>
-            </div>
+             <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
+            <span class="separator">|</span>
+            <span class="main-author-date">Aug 28, 21</span>
+          </div>
           </div>
         </article>
 
@@ -1190,17 +1277,11 @@
           </div>
           <h4>8 Mistakes That Will RUIN Your Weekend Trips Plan</h4>
           <div class="author">
-            <div class="author-section">
-              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-
-              <span class="name">Ryan Sillers</span>
-            </div>
-
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
             <span class="separator">|</span>
-
-            <span class="date">Sep 8, 21</span>
-
-            <svg
+            <span class="main-author-date">Aug 28, 21</span>
+             <svg
               class="icon save"
               viewBox="0 0 24 24"
               fill="none"
@@ -1221,18 +1302,12 @@
             Long-Term Care Needs Among Retirees Varies Widely, New Research
             Shows
           </h4>
-          <div class="author">
-            <div class="author-section">
-              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-
-              <span class="name">Ryan Sillers</span>
-            </div>
-
+            <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
             <span class="separator">|</span>
-
-            <span class="date">Sep 8, 21</span>
-
-            <svg
+            <span class="main-author-date">Aug 28, 21</span>
+             <svg
               class="icon save"
               viewBox="0 0 24 24"
               fill="none"
@@ -1250,18 +1325,12 @@
             <span class="badge purple">THE ESCAPIST</span>
           </div>
           <h4>The Top Secret Sights You Must See in Europe</h4>
-          <div class="author">
-            <div class="author-section">
-              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-
-              <span class="name">Ryan Sillers</span>
-            </div>
-
+            <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
             <span class="separator">|</span>
-
-            <span class="date">Sep 8, 21</span>
-
-            <svg
+            <span class="main-author-date">Aug 28, 21</span>
+             <svg
               class="icon save"
               viewBox="0 0 24 24"
               fill="none"
@@ -1279,18 +1348,12 @@
             <span class="badge red">SCIENCE</span>
           </div>
           <h4>Google’s Self-Designed Tensor Chips will Power Its Next</h4>
-          <div class="author">
-            <div class="author-section">
-              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-
-              <span class="name">Ryan Sillers</span>
-            </div>
-
+               <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
             <span class="separator">|</span>
-
-            <span class="date">Sep 8, 21</span>
-
-            <svg
+            <span class="main-author-date">Aug 28, 21</span>
+             <svg
               class="icon save"
               viewBox="0 0 24 24"
               fill="none"
@@ -1308,18 +1371,12 @@
             <span class="badge green">TECHNOLOGY</span>
           </div>
           <h4>Apple vs Samsung: Can a Good Smartwatch Save Your Life?</h4>
-          <div class="author">
-            <div class="author-section">
-              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-
-              <span class="name">Ryan Sillers</span>
-            </div>
-
+            <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
             <span class="separator">|</span>
-
-            <span class="date">Sep 8, 21</span>
-
-            <svg
+            <span class="main-author-date">Aug 28, 21</span>
+             <svg
               class="icon save"
               viewBox="0 0 24 24"
               fill="none"
@@ -1338,17 +1395,11 @@
           </div>
           <h4>10+ Pics That Prove Jennifer Is a Timeless Beauty</h4>
           <div class="author">
-            <div class="author-section">
-              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-
-              <span class="name">Ryan Sillers</span>
-            </div>
-
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
             <span class="separator">|</span>
-
-            <span class="date">Sep 8, 21</span>
-
-            <svg
+            <span class="main-author-date">Aug 28, 21</span>
+             <svg
               class="icon save"
               viewBox="0 0 24 24"
               fill="none"
@@ -1366,18 +1417,12 @@
             <span class="badge purple">THE ESCAPIST</span>
           </div>
           <h4>7 Amazing Unknown Places You Never Knew Existed</h4>
-          <div class="author">
-            <div class="author-section">
-              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-
-              <span class="name">Ryan Sillers</span>
-            </div>
-
+            <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
             <span class="separator">|</span>
-
-            <span class="date">Sep 8, 21</span>
-
-            <svg
+            <span class="main-author-date">Aug 28, 21</span>
+             <svg
               class="icon save"
               viewBox="0 0 24 24"
               fill="none"
@@ -1395,18 +1440,12 @@
             <span class="badge blue">ENTERTAINMENT</span>
           </div>
           <h4>Celebs in Red and Pink Dresses Red Carpet Trend</h4>
-          <div class="author">
-            <div class="author-section">
-              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
-
-              <span class="name">Ryan Sillers</span>
-            </div>
-
+             <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
             <span class="separator">|</span>
-
-            <span class="date">Sep 8, 21</span>
-
-            <svg
+            <span class="main-author-date">Aug 28, 21</span>
+             <svg
               class="icon save"
               viewBox="0 0 24 24"
               fill="none"
@@ -1425,6 +1464,8 @@
         <button class="page-buttons">Next &gt;</button>
       </div>
     </section>
+
+       </div>
 
     <!-- footer -->
     <footer>

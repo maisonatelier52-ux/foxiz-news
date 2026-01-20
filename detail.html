@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,15 +8,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-   <!-- header section -->
+
+        <!-- header section -->
+     <input type="checkbox" id="menu-toggle" />
     <header class="header">
       <!-- Left Icons -->
       <div class="header-left">
-        <img class="header-icons" src="/images/signin.svg" alt="search" />
-        <img class="header-icons" src="/images/facebook.svg" alt="search" />
-        <img class="header-icons" src="/images/twitter.svg" alt="search" />
-        <img class="header-icons" src="/images/youtube.svg" alt="search" />
+        <!-- <img class="header-icons" src="/images/signin.svg" alt="search" /> -->
+        <img class="header-icons" src="/images/facebook.svg" alt="facebook" />
+        <img class="header-icons" src="/images/twitter.svg" alt="twitter" />
+        <img class="header-icons" src="/images/youtube.svg" alt="youtube" />
       </div>
+  <label for="menu-toggle" class="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
 
       <!-- Center Logo -->
       <div class="header-center">
@@ -25,14 +32,15 @@
 
       <!-- Right Icons -->
       <div class="header-right">
-        <img class="header-icons" src="/images/bell.svg" alt="notificaton" />
-        <img class="header-icons" src="/images/search.svg" alt="search" />
+        <img class="header-right-icons" src="/images/bell.svg" alt="notificaton" />
+        <img class="header-right-icons" src="/images/search.svg" alt="search" />
       </div>
     </header>
 
+    <!-- categories section -->
     <nav class="nav">
       <ul class="nav-list">
-        <li class="active">Home</li>
+        <li>Home</li>
         <li>U.K News <i class="fa-solid fa-chevron-down"></i></li>
         <li>Technology <i class="fa-solid fa-chevron-down"></i></li>
         <li>Posts <i class="fa-solid fa-chevron-down"></i></li>
@@ -45,356 +53,827 @@
       </ul>
     </nav>
 
- <diV class="detail-section">
-     <section class="hero">
-       
-      <div class="overlay"></div>
+<!-- Mobile / Mega Menu -->
+<div class="mega-menu" id="megaMenu">
 
-      <article class="content">
-        <span class="tag">U.K. NEWS</span>
+  <div class="menu-search">
+    <label class="search-label">Search</label>
+    <div class="search-box">
+      <span class="search-icon"><img src="/images/search.svg" alt="search"/></span>
+      <input type="text" placeholder="Search Headlines, News..." />
+      <span class="search-arrow">→</span>
+    </div>
+  </div>
 
-        <h1>Key Trends Developing in Global Equity Markets</h1>
-
-        <p class="excerpt">
-          We are just an advanced breed of monkeys on a minor planet of a very
-          average star. But we can understand the Universe. That makes us
-          something very special.
-        </p>
-
-        <div class="meta">
-          <span class="author">Ryan Sillers</span>
-          <span>Senior Editor</span>
-          <span>•</span>
-          <span>Published: Aug 29, 21</span>
-          <span>•</span>
-          <span>Updated: Apr 7, 22</span>
-        </div>
-      </article>
-    </section>
-
-    <!-- second article section -->
-    <section class="article-layout">
-      <!-- LEFT: SOCIAL SHARE -->
-      <aside class="social-col">
-        <span class="share-label">SHARE</span>
-        <a class="social-btn">F</a>
-        <a class="social-btn">X</a>
-        <a class="social-btn">@</a>
-        <a class="social-btn">⋯</a>
-      </aside>
-
-      <!-- MIDDLE: CONTENT -->
-       <div class="main-and-sidebar">
-
-     
- <main class="article-content">
-<p>Good web design has visual weight, is optimized for various devices, and has content that is prioritized for the medium. The most important elements of a web page should have more visual weight to “naturally attract” a visitor’s attention.</p>
- <div class="contents-wrapper">
-    <div class="contents-header">
-      <div class="title">
-        <span class="icon">📖</span>
-        <h2>Contents</h2>
+  <div class="menu-section">
+    <h4>Demos</h4>
+    <div class="menu-grid">
+      <div class="menu-list">
+        <span>Home</span>
+      <span>Home</span>
+      <span>Home</span>
       </div>
-      <div class="toggle">▲</div>
-    </div>
-
-    <div class="contents-grid">
-      <!-- Left column -->
-      <ul class="contents-list">
-        <li>
-          <span class="number">1</span>
-          <span class="text">A good website should be easy to navigate</span>
-        </li>
-        <li>
-          <span class="number">2</span>
-          <span class="text">Creating visual rhythms in your layouts</span>
-        </li>
-        <li>
-          <span class="number">3</span>
-          <span class="text">Elements that can help website visual composition</span>
-        </li>
-      </ul>
-
-      <!-- Right column -->
-      <ul class="contents-list">
-        <li>
-          <span class="number">4</span>
-          <span class="text">Diving into UX and UI design</span>
-        </li>
-        <li>
-          <span class="number">5</span>
-          <span class="text">Ensure that interactive elements are easy to identify</span>
-        </li>
-        <li>
-          <span class="number">6</span>
-          <span class="text">Breaking down the barriers</span>
-        </li>
-      </ul>
-    </div>
-
-  </div> 
-  <p>Optimization for various types of devices and resolutions plays a fundamental role in modern website design. Web page layouts should be genuinely responsive and not rely on any fixed-size elements. Web designers using fluid grids and flexible images will guarantee that a web page will render well on a variety of devices, windows, and screen sizes.</p>
-
-  <section class="design-quote">
-  <div class="quote-icon">“</div>
-
-  <p class="quote-text">
-    Good design is making something intelligible and memorable.
-    Great design is making something memorable and meaningful.
-  </p>
-
-  <div class="quote-author">
-    <span class="author-line"></span>
-    <span class="author-name">Dieter Rams</span>
-  </div>
-</section>
-<p>Most users search for something interesting (or useful) and clickable; as soon as some promising candidates are found, users click. If the new page doesn’t meet users’ expectations, the back button is clicked and the search process is continued.
-</p>
-<div>
-  <h2>A good website should be easy to navigate</h2>
-  <p>Not all websites are made equal. Some websites are simple, logical, and easy to use. Others are a messy hodgepodge of pages and links.
-</p>
-<div class="detail-image-wrapper">
-
-  <img src="/images/detail-section-02.jpg" alt="" class=""/> 
-</div>
-<p>Without website navigation, your visitors can’t figure out how to find your blog, your email signup page, your product listings, pricing, contact information, or help docs.</p>
-<div class="text-and-more-read">
-  <div class="text-section">
-    <p>Quick and easy access to the content they’re after is more important for your website users than a… visually-stunning design.</p>
-  <p>Website navigation allows visitors to flow from one page to another without frustration. If you’ve done your job well, visitors leave your site with the intention to return and might even buy something from you or sign up for your email list.
-</p>
-<i>Bad navigation is an especially common problem. We’ve all struggled to find things on disorganized websites without any logical structure. It feels hopeless.</i>
-
-  </div>
-  <div class="more-read">
-<h3>More Read</h3>
-<div class="more-section">
-<div class="more-top">
-<img src="/images/detail-section-05.jpg" alt="" class="more-image"/>
-<span>member only</span>
-<p>What’s Wrong With Asgard ‘s 2022 Audit? A Lot, Thor Say</p>
-
-</div>
-<p> Key Trends Developing in Global Equity Markets</p>
-<p><span>member only</span>The States Braces for Protests Over New COVID Rules</p>
-<p>One Day Noticed, Politicians Wary Resignation Timetable</p>
-<p>White House Reminds Lawmakers not to Travel to Afghanistan</p>
-</div>
-  </div>
-  </div>
-Using “complex large pictures”. Because a carousel generally carries a lot of picture messages, complex large pictures result in low performance and “slow loading rate” of the sites, especially those whose first homepages are occupied by high-resolution carousels.
-</div>
-
-<div>
-  <h2>Creating visual rhythms in your layouts</h2>
-  <p>In design, rhythm is created by simply repeating elements in predictable patterns. This repetition is a natural thing that occurs everywhere in our world. As people, we are driven everyday by predictable, timed events.</p>
-<div class="detail-image-wrapper">
-    <img src="/images/detail-section-03.jpg" alt=""/>
-</div>
-<p>One of the best ways to use repetition and rhythm in web design is in the site’s navigation menu. A consistent, easy-to-follow pattern—in color, layout, etc. Gives users an intuitive roadmap to everything you want to share on your site.</p>
-<p>Rhythm also factors into the layout of content. For example, you “might have” blog articles, press releases, and events each follow their own certain layout pattern.
-</p>
-</div>
-
-<div>
-  <h2>Elements that can help website visual composition</h2>
-  <p>Nobody enjoys looking at an ugly web page. Garish colors, cluttered images and distracting animation can all turn customers “off” and send them shopping “somewhere else”. Basic composition rules to create more effective:
-</p>
-
-
-<!-- points -->
-
-
-
-
-<p>The size and position of elements in a composition will determine its balance. An unbalanced design generates tension, which may be the goal in many design projects, but for web apps that demand repeated comfortable use, tension is not a desirable trait.</p>
-
-</div>
-
-
-<div>
-  <h2>Diving into UX and UI design</h2>
-  <p>UX and UI: Two terms that are often used interchangeably, but actually mean very different things. So what exactly is the difference?</p>
-  <div class="text-and-quote">
-      <p>UX design refers to the term “user experience design”, while UI stands for “user interface design”. Both elements are crucial to a product and work closely together. But despite their relationship, the roles themselves are quite different.</p>
-      <p class="quote-text">Styles come and go. Good design is a language, not a style.</p>
-    <div>
-    </div>
-  </div>
-</div>
-
-<div>
-  <h2>Ensure that interactive elements are easy to identify</h2>
-  <p>Good design guides the user by communicating purpose and priority. For that reason, every part of the design should be based on an “informed decision” rather than an arbitrary result of personal taste or the current trend.</p>
-  <div class="detail-image-wrapper">
-    <img src="/images/detail-section-04.jpg" alt=""/> 
-    <p>Provide distinct styles for interactive elements, such as links and buttons, to make them easy to identify. For example, “change the appearance of links” on mouse hover, “keyboard focus”, and “touch-screen activation”.</p>
-  </div>
-</div>
-
-<div>
-  <h2>Breaking down the barriers</h2>
-  <span>Design is not the end-all solution to all of the worlds problems</span> <span>— but with the right thinking and application, it can definitely be a good beginning to start tackling them.</span>
-<div>
-  <p>National Day Rally Sacrifice, Effort Needed to Preserve Harmony</p>
-  <p>Coronavirus Resurgence Could Cause Major Problems for Soldiers Spring</p>
-  <p>Municipal Politicians to Debate Introduction of Vaccination Passport</p>
-  <p> Two Anti-Lockdown Leaders Arrested as Protests Held Across Valinor</p>
-  <p> Global Warming Is Changing How Hurricanes Work</p>
-</div>
-</div>
-
-
-<div class="share-article">
-  <div class="share-left">
-    <span class="share-icon">↗</span>
-    <span class="share-text">Share This Article</span>
-  </div>
-
-  <div class="share-right">
-    <a class="share-btn fb">Facebook</a>
-    <a class="share-btn x">X</a>
-    <a class="share-btn mail">✉</a>
-    <a class="share-btn print">🖨</a>
-    <a class="share-btn more">⋯</a>
-  </div>
-</div>
-
-<div class="comment-section">
-  <h3 class="comment-title">
-    <span class="comment-icon">💬</span>
-    Leave a Comment
-  </h3>
-
-  <p class="comment-note">
-    Your email address will not be published. Required fields are marked
-    <span class="required">*</span>
-  </p>
-
-  <form class="comment-form">
-    <textarea
-      class="comment-textarea"
-      placeholder="Leave a Comment"
-    ></textarea>
-
-    <div class="comment-fields">
-      <input type="text" placeholder="Your name" />
-      <input type="email" placeholder="Your email" />
-      <input type="text" placeholder="Your website" />
-    </div>
-
-    <label class="comment-save">
-      <input type="checkbox" />
-      Save my name, email, and website in this browser for the next time I
-      comment.
-    </label>
-
-    <button type="submit" class="comment-btn">Post Comment</button>
-  </form>
-</div>
-
-</main>
-
-      <!-- RIGHT: SIDEBAR -->
-      <aside class="sidebar-col">
-      <section class="social-follow">
-  <h2>Follow US</h2>
-  <p class="subtitle">Find US on Social Medias</p>
-  
-  <div class="social-grid">
-    <div class="social-item">
-      <div class="icon-circle facebook"><i class="fab fa-facebook-f"></i></div>
-      <h3>Facebook</h3>
-      <span>Like</span>
-    </div>
-    <div class="social-item">
-      <div class="icon-circle x-twitter">𝕏</div>
-      <h3>X</h3>
-      <span>Follow</span>
-    </div>
-    <div class="social-item">
-      <div class="icon-circle youtube"><i class="fab fa-youtube"></i></div>
-      <h3>Youtube</h3>
-      <span>Subscribe</span>
-    </div>
-    <div class="social-item">
-      <div class="icon-circle telegram"><i class="fas fa-paper-plane"></i></div>
-      <h3>Telegram</h3>
-      <span>Follow</span>
+     <div class="menu-list">
+       <span>Home</span>
+      <span>Home</span>
+     </div>
     </div>
   </div>
 
-
-</section>
-
-   <section class="newsletter-card">
-  <div class="foxiz-logo">FOXIZ<sup>®</sup></div>
-  <h2>Weekly Newsletter</h2>
-  <p>Subscribe to our newsletter to get our newest articles instantly!</p>
-  
-  <form>
-    <input type="email" placeholder="Your email address" required>
-    <button type="submit">Sign Up Now</button>
-    
-    <label class="terms">
-      <input type="checkbox" required>
-      <span>I have read and agree to the terms & conditions</span>
-    </label>
-  </form>
-</section>
-
-<section class="popular news">
-  <h3>Popular news</h3>
-  <div class="image-wrapper">
-    <img src="/images/detail-section-02.jpg" alt=""/>
-    <span class="badge tech">Technology</span>
+  <div class="menu-section">
+    <h4>Categories</h4>
+    <div class="menu-grid">
+     <div class="menu-list">
+       <span>Technology</span>
+      <span>Entertainment</span>
+      <span>The Escapist</span>
+      <span>Insider</span>
+     </div>
+     <div class="menu-list">
+       <span>ES Money</span>
+      <span>U.K News</span>
+      <span>Science</span>
+      <span>Health</span>
+     </div>
+    </div>
   </div>
-  <p>
-    Here Are the 4 Cheapest Electric Vehicles You Can Buy
-  </p>
-       <div class="author">
-            <div class="author-section">
-              <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
 
-              <span class="name">Ryan Sillers</span>
-            </div>
+  <div class="menu-section">
+    <h4>Bookmarks</h4>
+    <div class="menu-grid">
+      <div><span>Customize Interests</span></div>
+      <div><span>My Bookmarks</span></div>
+    </div>
+  </div>
 
+  <div class="menu-section">
+    <h4>More Foxiz</h4>
+    <div class="menu-grid">
+      <div><span>Blog Index</span></div>
+      <div><span>Sitemap</span></div>
+    </div>
+  </div>
+
+<div class="auth-follow">
+  <div class="auth-row">
+    <span>Have an existing account?</span>
+    <a href="#" class="signin-btn">Sign In</a>
+  </div>
+
+  <div class="follow-row">
+    <span>Follow US</span>
+    <div class="social-icons">
+      <a href="#"><img class="item-icon" src="/images/facebook.svg" alt="facebook" /></a>
+      <a href="#">  <img class="item-icon" src="/images/twitter.svg" alt="twitter" /></i></a>
+      <!-- <a href="#">  <img class="item-icon" src="/images/.svg" alt="search" /></i></a> -->
+    </div>
+  </div>
+</div>
+</div>
+
+    <div class="main-detail">
+      <div class="detail-section">
+        <section class="hero">
+          <p class="breadcrump">
+            Standard News > Blog > U.K News > Two Anti-Lockdown Leaders Arrested
+            as Protests Held Across Valinor
+          </p>
+
+          <div class="overlay"></div>
+
+          <article class="content">
+            <span class="tag">U.K. NEWS</span>
+
+            <h1>Key Trends Developing in Global Equity Markets</h1>
+
+            <p class="excerpt">
+              We are just an advanced breed of monkeys on a minor planet of a
+              very average star. But we can understand the Universe. That makes
+              us something very special.
+            </p>
+
+           <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="main-author-name">Ryan Sillers</span>
             <span class="separator">|</span>
+            <span class="main-author-date"> <span>Senior Editor</span>
+              <span>•</span>
+              <span>Published: Aug 29, 21</span>
+              <span>•</span>
+              <span>Updated: Apr 7, 22</span></span>
+            
+          </div>
+          </article>
+        </section>
+        <!-- second article section -->
+        <section class="article-layout">
+          <!-- LEFT: SOCIAL SHARE -->
 
-            <span class="date">Sep 8, 21</span>
+          <!-- MIDDLE: CONTENT -->
+          <main class="article-content">
+           <div class="top-detail">
+             <aside class="social-col">
+              <img
+                src="/images/file-share.svg"
+                alt="share"
+                class="social-btn"
+              />
+              <span class="share-label">SHARE</span>
+              <div class="share-list-icons">
+                <img
+                  src="/images/facebook.svg"
+                  alt="facebook"
+                  class="social-btn"
+                />
+                <img
+                  src="/images/twitter.svg"
+                  alt="twitter"
+                  class="social-btn"
+                />
+                <img src="/images/mail.svg" alt="mail" class="social-btn" />
+                <img src="/images/print.svg" alt="print" class="social-btn" />
+                <a class="social-btn">⋯</a>
+              </div>
+            </aside>
 
-            <svg
-              class="icon save"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-            </svg>
+            <div class="mid">
+              <p class="dropcap-paragraph">
+                <span class="dropcap">G</span>
+                ood web design has visual weight, is
+                <strong>optimized for various devices</strong>, and has content
+                that is prioritized for the medium. The most important elements
+                of a web page should have more visual weight to
+                <strong>“naturally attract”</strong> a visitor’s attention.
+              </p>
+
+              <div class="contents-wrapper">
+                <div class="contents-header">
+                  <div class="title">
+                    <span class="icon">📖</span>
+                    <h2>Contents</h2>
+                  </div>
+                  <div class="toggle">
+                    <img src="/images/top-arrow.svg" alt="top-arrow" />
+                  </div>
+                </div>
+
+                <div class="contents-grid">
+                  <!-- Left column -->
+                  <ul class="contents-list">
+                    <li>
+                      <span class="number">1</span>
+                      <span class="text"
+                        >A good website should be easy to navigate</span
+                      >
+                    </li>
+                    <li>
+                      <span class="number">2</span>
+                      <span class="text"
+                        >Creating visual rhythms in your layouts</span
+                      >
+                    </li>
+                    <li>
+                      <span class="number">3</span>
+                      <span class="text"
+                        >Elements that can help website visual composition</span
+                      >
+                    </li>
+                  </ul>
+
+                  <!-- Right column -->
+                  <ul class="contents-list">
+                    <li>
+                      <span class="number">4</span>
+                      <span class="text">Diving into UX and UI design</span>
+                    </li>
+                    <li>
+                      <span class="number">5</span>
+                      <span class="text"
+                        >Ensure that interactive elements are easy to
+                        identify</span
+                      >
+                    </li>
+                    <li>
+                      <span class="number">6</span>
+                      <span class="text">Breaking down the barriers</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="dropcap-paragraph">
+                Optimization for various types of devices and resolutions plays
+                a fundamental role in modern website design. Web page layouts
+                should be <strong>genuinely responsive</strong> and not rely on
+                any fixed-size elements. Web designers using
+                <strong> fluid grids</strong> and flexible images will guarantee
+                that a web page will render well on a variety of devices,
+                windows, and screen sizes.
+              </p>
+
+              <section class="design-quote">
+                <div class="quote-icon">“</div>
+
+                <p class="quote-text">
+                  Good design is making something intelligible and memorable.
+                  Great design is making something memorable and meaningful.
+                </p>
+
+                <div class="quote-author">
+                  <span class="author-line"></span>
+                  <span class="author-name">Dieter Rams</span>
+                </div>
+              </section>
+              <p class="dropcap-paragraph">
+                Most users search for something interesting (or useful) and
+                clickable; as soon as some promising candidates are found, users
+                click.
+                <strong> If the new page doesn’t meet users’</strong>
+                expectations, the back button is clicked and the search process
+                is continued.
+              </p>
+
+              <div class="sub-section">
+                <h2 class="sub-h2">
+                  A good website should be easy to navigate
+                </h2>
+                <p class="dropcap-paragraph">
+                  Not all websites are made equal. Some websites are simple,
+                  logical, and easy to use. Others are a messy hodgepodge of
+                  pages and links.
+                </p>
+                <div class="detail-image-wrapper">
+                  <img src="/images/detail-section-02.jpg" alt="" class="" />
+                </div>
+                <p class="dropcap-paragraph">
+                  Without website navigation, your visitors can’t figure out how
+                  to find your blog, your email signup page, your product
+                  listings, pricing, contact information, or help docs.
+                </p>
+                <div class="text-and-more-read">
+                  <div class="text-section">
+                    <p class="dropcap-paragraph">
+                      <strong>
+                        Quick and easy access to the content they’re after is
+                        more important for your website users than a…
+                        visually-stunning design.
+                      </strong>
+                    </p>
+                    <p class="most-common-paragraph">
+                      Website navigation allows visitors to flow from one page
+                      to another without frustration. If you’ve done your job
+                      well, visitors leave your site with the
+                      <strong> intention to return</strong> and might even buy
+                      something from you or sign up for your email list.
+                    </p>
+                    <p class="dropcap-paragraph">
+                      <em
+                        >Bad navigation is an especially common problem. We’ve
+                        all struggled to find things on disorganized websites
+                        without any logical structure. It feels hopeless.</em
+                      >
+                    </p>
+                  </div>
+                  <div class="more-read">
+                    <h3 class="more-title">
+                      <span class="title-dot"></span>
+                      <span class="title-text">More Read</span>
+                    </h3>
+
+                    <div class="more-section">
+                      <div class="more-top">
+                        <img
+                          src="/images/detail-section-05.jpg"
+                          alt=""
+                          class="more-image"
+                        />
+                        <p>
+                          <span>member only</span> What’s Wrong With Asgard ‘s
+                          2022 Audit? A Lot, Thor Say
+                        </p>
+                      </div>
+                      <p>Key Trends Developing in Global Equity Markets</p>
+                      <p>
+                        <span>member only</span>The States Braces for Protests
+                        Over New COVID Rules
+                      </p>
+                      <p>
+                        One Day Noticed, Politicians Wary Resignation Timetable
+                      </p>
+                      <p>
+                        White House Reminds Lawmakers not to Travel to
+                        Afghanistan
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p class="dropcap-paragraph">
+                  Using <strong> “complex large pictures”</strong>. Because a
+                  carousel generally carries a lot of picture messages, complex
+                  large pictures result in low performance and
+                  <strong>“slow loading rate”</strong> of the sites, especially
+                  those whose first homepages are occupied by high-resolution
+                  carousels.
+                </p>
+              </div>
+
+              <div class="sub-section">
+                <h2 class="sub-h2">Creating visual rhythms in your layouts</h2>
+                <p class="dropcap-paragraph">
+                  In design, rhythm is created by simply repeating elements in
+                  predictable patterns. This repetition is a natural thing that
+                  occurs everywhere in our world. As people, we are driven
+                  everyday by predictable, timed events.
+                </p>
+                <div class="detail-image-wrapper">
+                  <img src="/images/detail-section-03.jpg" alt="" />
+                </div>
+                <p class="most-common-paragraph">
+                  One of the best ways to use
+                  <strong> repetition and rhythm in web design</strong> is in
+                  the site’s navigation menu. A consistent, easy-to-follow
+                  pattern—in color, layout, etc. Gives users an intuitive
+                  roadmap to everything you want to share on your site.
+                </p>
+                <p class="dropcap-paragraph">
+                  Rhythm also factors into the
+                  <strong> layout of content.</strong> For example, you
+                  <strong>“might have”</strong> blog articles, press releases,
+                  and events each follow their own certain layout pattern.
+                </p>
+              </div>
+
+              <div class="sub-section">
+                <h2 class="sub-h2">
+                  Elements that can help website visual composition
+                </h2>
+                <p class="dropcap-paragraph">
+                  Nobody enjoys looking at an ugly web page. Garish colors,
+                  cluttered images and distracting animation can all turn
+                  customers “off” and send them shopping “somewhere else”. Basic
+                  composition rules to create more effective:
+                </p>
+
+                <!-- points -->
+                <div class="design-tips">
+                  <ul class="tip-list">
+                    <li>
+                      <span class="tick-icon">
+                        <!-- Green Tick SVG -->
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="11"
+                            stroke="#5FA05F"
+                            stroke-width="2"
+                            fill="none"
+                          />
+                          <path
+                            d="M7 12.5l3 3 7-7"
+                            stroke="#5FA05F"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      Direct the Eye With <strong><u>Leading Lines</u></strong>
+                    </li>
+
+                    <li>
+                      <span class="tick-icon">
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="11"
+                            stroke="#5FA05F"
+                            stroke-width="2"
+                          />
+                          <path
+                            d="M7 12.5l3 3 7-7"
+                            stroke="#5FA05F"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      Balance Out Your Elements
+                    </li>
+
+                    <li>
+                      <span class="tick-icon">
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="11"
+                            stroke="#5FA05F"
+                            stroke-width="2"
+                          />
+                          <path
+                            d="M7 12.5l3 3 7-7"
+                            stroke="#5FA05F"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      Use Elements That <strong>Complement Each Other</strong>
+                    </li>
+
+                    <li>
+                      <span class="tick-icon">
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="11"
+                            stroke="#5FA05F"
+                            stroke-width="2"
+                          />
+                          <path
+                            d="M7 12.5l3 3 7-7"
+                            stroke="#5FA05F"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      Be clear about your <strong>“focal points”</strong> and
+                      where you place them
+                    </li>
+                  </ul>
+                </div>
+
+                <p class="most-common-paragraph">
+                  The size and position of elements in a composition will
+                  determine its balance. An unbalanced design generates tension,
+                  which may be the goal in many design projects, but for web
+                  apps that demand repeated comfortable use, tension is not a
+                  desirable trait.
+                </p>
+              </div>
+
+              <div class="sub-section">
+                <h2 class="sub-h2">Diving into UX and UI design</h2>
+                <p class="dropcap-paragraph">
+                  <strong> UX and UI:</strong> Two terms that are often used
+                  interchangeably, but actually mean very different things. So
+                  what exactly is the difference?
+                </p>
+                <div class="text-and-quote">
+                  <p class="dropcap-text">
+                    UX design refers to the term
+                    <em>“user experience design”</em>, while UI stands for
+                    <em> “user interface design”.</em> Both elements are crucial
+                    to a product and work closely together. But despite their
+                    relationship, <strong>the roles themselves</strong> are
+                    quite different.
+                  </p>
+
+                  <div class="quote-section">
+                    <span class="single-quote">‘</span>
+                    <p class="quote-text">
+                      Styles come and go. Good design is a language, not a
+                      style.
+                    </p>
+
+                    <div class="quote-author">
+                      <span class="author-line"></span>
+                      <span class="author-name">Massimo Vignelli</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- scrolling funtionallity of sidebar  -->
+              <div id="sidebar-stop"></div>
+
+              <div class="sub-section">
+                <p class="heading-text">
+                  <span>Ensure that</span>
+                  <span>interactive elements</span>
+                  <span>are easy to identify</span>
+                </p>
+
+                <p class="most-common-paragraph">
+                  Good design guides the user by communicating purpose and
+                  priority. For that reason, every part of the design should be
+                  based on an <strong>“informed decision”</strong> rather than
+                  an arbitrary result of personal taste or the current trend.
+                </p>
+                <div class="detail-image-wrapper">
+                  <img src="/images/detail-section-04.jpg" alt="" />
+                  <p>
+                    Provide distinct styles for interactive elements, such as
+                    links and buttons, to make them easy to identify. For
+                    example, “change the appearance of links” on mouse hover,
+                    “keyboard focus”, and “touch-screen activation”.
+                  </p>
+                </div>
+                <p class="dropcap-paragraph">
+                  Provide distinct styles for interactive elements, such as
+                  links and buttons, to make them easy to identify. For
+                  example,<strong> “change the appearance of links”</strong> on
+                  mouse hover, “keyboard focus”, and “touch-screen activation”.
+                </p>
+              </div>
+
+              <div class="sub-section">
+                <h2 class="sub-h2">Breaking down the barriers</h2>
+                <p class="dropcap-paragraph">
+                  <strong
+                    >Design is not the end-all solution to all of the worlds
+                    problems</strong
+                  >
+                  — but with the right thinking and application, it can
+                  definitely be a good beginning to start tackling them.
+                </p>
+
+                <div class="news-list">
+                  <ul>
+                    <li>
+                      <span class="plus">+</span> National Day Rally Sacrifice,
+                      Effort Needed to Preserve Harmony
+                    </li>
+                    <li>
+                      <span class="plus">+</span> Coronavirus Resurgence Could
+                      Cause Major Problems for Soldiers Spring
+                    </li>
+                    <li>
+                      <span class="plus">+</span> Municipal Politicians to
+                      Debate Introduction of Vaccination Passport
+                    </li>
+                    <li>
+                      <span class="plus">+</span> Two Anti-Lockdown Leaders
+                      Arrested as Protests Held Across Valinor
+                    </li>
+                    <li>
+                      <span class="plus">+</span> Global Warming Is Changing How
+                      Hurricanes Work
+                    </li>
+                  </ul>
+                </div>
+                <div class="section-underline"></div>
+                <p class="detail-last-tag">
+                  TAGGED: <strong> Democrat, Election, Vote</strong>
+                </p>
+              </div>
+            </div>
+           </div>
+           
+            <div class="bottom">
+              <div class="share-article">
+                <div class="share-left">
+                  <img
+                    src="/images/file-share.svg"
+                    alt="file-share"
+                    class="social-btn"
+                  />
+                  <span class="share-text">Share This Article</span>
+                </div>
+
+                <div class="share-right">
+                  <a class="share-btn fb">
+                    <img
+                      src="/images/fb-white.svg"
+                      alt="fb"
+                      class="social-btn"
+                    />
+                    <span>Facebook</span></a
+                  >
+                  <a class="share-btn x"
+                    ><img
+                      src="/images/X-white.svg"
+                      alt="twitter"
+                      class="social-btn"
+                    />
+                  </a>
+                  <a class="share-btn mail"
+                    ><img
+                      src="/images/gmail-white.svg"
+                      alt="mail"
+                      class="social-btn"
+                  /></a>
+                  <a class="share-btn print"
+                    ><img
+                      src="/images/print-white.svg"
+                      alt="printer"
+                      class="social-btn"
+                  /></a>
+                  <a class="share-btn more">⋯</a>
+                </div>
+              </div>
+
+              <div class="comment-section">
+                <h3 class="comment-title">
+                  <span class="comment-icon"
+                    ><img
+                      src="/images/leave-comment.svg"
+                      alt="leave-comment"
+                      class="d"
+                    />
+                  </span>
+                  Leave a Comment
+                </h3>
+
+                <p class="comment-note">
+                  Your email address will not be published. Required fields are
+                  marked
+                  <span class="required">*</span>
+                </p>
+
+                <form class="comment-form">
+                  <textarea
+                    class="comment-textarea"
+                    placeholder="Leave a Comment"
+                  ></textarea>
+
+                  <div class="comment-fields">
+                    <input type="text" placeholder="Your name" />
+                    <input type="email" placeholder="Your email" />
+                    <input type="text" placeholder="Your website" />
+                  </div>
+
+                  <label class="comment-save">
+                    <input type="checkbox" />
+                    Save my name, email, and website in this browser for the
+                    next time I comment.
+                  </label>
+
+                  <button type="submit" class="comment-btn">
+                    Post Comment
+                  </button>
+                </form>
+              </div>
+            </div>
+          </main>
+
+          <!-- RIGHT: SIDEBAR -->
+          <aside class="sidebar-col">
+            <section class="social-follow">
+              <h2>Follow US</h2>
+              <p class="subtitle">Find US on Social Medias</p>
+
+              <div class="social-grid">
+                <div class="social-item">
+                  <div class="icon-circle facebook">
+                    <img
+                      src="/images/fb-white.svg"
+                      alt="fb"
+                      class="follow-btn"
+                    />
+                  </div>
+                  <h3>Facebook</h3>
+                  <span>Like</span>
+                </div>
+                <div class="social-item">
+                  <div class="icon-circle x-twitter">
+                    <img
+                      src="/images/X-white.svg"
+                      alt="twitter"
+                      class="follow-btn"
+                    />
+                  </div>
+                  <h3>X</h3>
+                  <span>Follow</span>
+                </div>
+                <div class="social-item">
+                  <div class="icon-circle medium">
+                    <img
+                      src="/images/medium-white.svg"
+                      alt="youtube"
+                      class="follow-btn"
+                    />
+                  </div>
+                  <h3>Medium</h3>
+                  <span>Subscribe</span>
+                </div>
+                <div class="social-item">
+                  <div class="icon-circle substack">
+                    <img
+                      src="/images/substack-white.svg"
+                      alt="telegram"
+                      class="follow-btn"
+                    />
+                  </div>
+                  <h3>Substack</h3>
+                  <span>Follow</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="newsletter-card">
+              <div class="foxiz-logo">FOXIZ<sup>®</sup></div>
+              <h2>Weekly Newsletter</h2>
+              <p class="subscribe-text">
+                Subscribe to our newsletter to get our newest articles
+                instantly!
+              </p>
+
+              <form>
+                <input type="email" placeholder="Your email address" required />
+                <button type="submit">Sign Up Now</button>
+
+                <label class="terms">
+                  <input type="checkbox" required />
+                  <span>I have read and agree to the terms & conditions</span>
+                </label>
+              </form>
+            </section>
+
+            <section class="popular-news">
+              <h3>Popular news</h3>
+              <div class="popular-image-wrapper">
+                <img src="/images/detail-section-02.jpg" alt="" />
+                <span class="badge-technology">Technology</span>
+              </div>
+              <p class="sub-title">
+                Here Are the 4 Cheapest Electric Vehicles You Can Buy
+              </p>
+            <div class="author">
+            <img src="/images/ryan-sillers.jpg" alt="Ryan Sillers" />
+            <span class="name">Ryan Sillers</span>
+            <span class="separator">|</span>
+            <span class="main-author-date">Aug 28, 21</span>
+              <svg
+                  class="icon save"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
           </div>
 
-          <div>
-            <p>The States Braces for Protests Over New COVID Rules</p>
-            <p> 9 Awesome Destinations for Solo Female Travelers</p>
-            <p>The Best Islands for Beaches, From Aruba to the Baltics</p>
-            <p>Sony WF-10XM4: Headphones Are Our Absolute Favorite</p>
-          </div>
-</section>
+              <div class="popular-row">
+                <p class="popular-item">
+                  <span class="popular-plus">+</span
+                  ><span class="member-only">member only</span
+                  ><span class="popular-list-item"
+                    >The States Braces for Protests Over New COVID Rules</span
+                  >
+                </p>
+                <p class="popular-item">
+                  <span class="popular-plus">+</span
+                  ><span class="popular-list-item">
+                    9 Awesome Destinations for Solo Female Travelers</span
+                  >
+                </p>
+                <p class="popular-item">
+                  <span class="popular-plus">+</span
+                  ><span class="popular-list-item"
+                    >The Best Islands for Beaches, From Aruba to the
+                    Baltics</span
+                  >
+                </p>
+                <p class="popular-item">
+                  <span class="popular-plus">+</span
+                  ><span class="popular-list-item">
+                    Sony WF-10XM4: Headphones Are Our Absolute Favorite</span
+                  >
+                </p>
+              </div>
+            </section>
 
-<section class="ad-detail-section">
-  <span>- Advertisement -</span>
-  <div class="ad-image-wrapper">
-
-    <img src="/images/newsflashpro.jpeg" alt="newsflashpro-ad"/>
-  </div>
-</section>
-      </aside>
-  </div>
-    </section>
- </diV>
-
+            <section class="ad-detail-section">
+              <span class="ad-title">- Advertisement -</span>
+              <div class="ad-image-wrapper">
+                <img
+                  src="/images/mirrorstandard-ad.webp"
+                  alt="newsflashpro-ad"
+                />
+              </div>
+            </section>
+          </aside>
+        </section>
+      </div>
+    </div>
 
     <!-- footer -->
     <footer>
